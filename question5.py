@@ -45,7 +45,6 @@ def etl_example(server_config):
                 , 'offset': 0
                 , 'limit' : 50000}
 
-    # data_json = {'resource_id': '_table_metadata'}
     #Extract
     result , response_dict = do_request(url, data_json)
     result_df = pd.DataFrame(result['records'])
